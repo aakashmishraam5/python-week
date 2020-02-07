@@ -1,0 +1,29 @@
+"""import datetime
+date=list(map(int,input().strip().split()))
+days=int(date[0])
+year=int(date[1])
+
+
+print(datetime.datetime(year, 1, 1))
+"""
+
+"""
+import datetime
+day=int(input(),end="")
+year = int(input())
+data = datetime.datetime(year,month,day)
+daynew = data.toordinal()
+yearstart = datetime.datetime(year,1,1)
+day_yearstart = yearstart.toordinal()
+print ((daynew-day_yearstart)+1)
+
+"""
+
+
+from datetime import date
+d=list(map(int,input().strip().split()))
+days=int(d[0])
+year=int(d[1])
+t=date.fromordinal(date(year, 1, 1).toordinal() + days - 1)
+print(t.strftime('%d/%m/%Y'))
+print(t.strftime("%A") ) 
