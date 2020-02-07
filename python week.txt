@@ -4,7 +4,7 @@ days=int(date[0])
 year=int(date[1])
 
 
-print(datetime.datetime(year, 1, 1))
+print(datetime.datetime(year, 1, 1) + datetime.timedelta(days - 1))
 """
 
 """
